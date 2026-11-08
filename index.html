@@ -383,9 +383,59 @@ footer {
   gap: 15px;
   color: var(--muted);
   font-size: 11px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 footer span { color: var(--accent); }
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Profile views badge */
+.views-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(200,241,105,.06);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent);
+  transition: background .2s, border-color .2s;
+}
+
+.views-badge:hover {
+  background: rgba(200,241,105,.12);
+  border-color: rgba(200,241,105,.5);
+}
+
+.views-badge img {
+  display: block;
+  height: 18px;
+  width: auto;
+}
+
+.views-badge .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .3; }
+}
 
 @media (max-width: 720px) {
   .wrap { width: 89%; }
@@ -442,16 +492,7 @@ footer span { color: var(--accent); }
 
   .contact-box { padding: 28px 22px; }
 
-  footer { flex-direction: column; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-
-  *, *::before, *::after {
-    transition-duration: .01ms !important;
-    animation-duration: .01ms !important;
-  }
+  footer { flex-direction: column; align-items: flex-start; }
 }
 </style></head><body><header>
   <nav class="wrap">
@@ -643,7 +684,18 @@ footer span { color: var(--accent); }
 
   </div>
 </section></main><footer class="wrap">
-  <div>© <span id="year"></span> Omor TE. Made with curiosity.</div>
+  <div class="footer-left">
+    <span>© <span id="year"></span> Omor TE. Made with curiosity.</span>
+    <a class="views-badge" href="https://github.com/txrszone" target="_blank" rel="noopener noreferrer" title="Profile views">
+      <span class="dot"></span>
+      <img
+        id="views-primary"
+        src="https://komarev.com/ghpvc/?username=txrszone&label=Views&color=c8f169&style=flat-square"
+        alt="Profile views"
+        onerror="this.onerror=null;this.src='https://visitor-badge.laobi.icu/badge?page_id=txrszone.homepage&left_text=Views&color=c8f169';"
+      >
+    </a>
+  </div>
   <div>Designed to keep building <span>✳</span></div>
 </footer><script>
 document.getElementById("year").textContent = new Date().getFullYear();
