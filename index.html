@@ -4,27 +4,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#11120f">
 <meta name="description" content="Omor TE — gaming enthusiast, technology lover, and creator who enjoys building new things and turning ideas into reality.">
-<title>Omor TE — Always Building</title>
-
-<!-- Google Fonts: Inter -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>Omor TE — Always Building</title><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet"><meta property="og:type" content="website">
 <meta property="og:url" content="https://txrszone.github.io/">
 <meta property="og:title" content="Omor TE — Always Building">
 <meta property="og:description" content="Gaming enthusiast, technology lover, and creator building fun digital projects.">
-<meta property="og:image" content="https://i.postimg.cc/B6zZscsp/1787207050581.jpg">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://i.postimg.cc/B6zZscsp/1787207050581.jpg"><meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Omor TE — Always Building">
 <meta name="twitter:description" content="Gaming enthusiast, technology lover, and creator building fun digital projects.">
-<meta name="twitter:image" content="https://i.postimg.cc/B6zZscsp/1787207050581.jpg">
-
-<style>
+<meta name="twitter:image" content="https://i.postimg.cc/B6zZscsp/1787207050581.jpg"><style>
 :root {
   --bg: #11120f;
   --panel: #191a16;
@@ -431,6 +420,7 @@ footer span { color: var(--accent); }
   text-transform: uppercase;
   color: var(--cat-web);
   transition: background .2s, border-color .2s;
+  cursor: default;
 }
 
 .views-badge:hover {
@@ -455,6 +445,17 @@ footer span { color: var(--accent); }
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: .3; }
+}
+
+/* Fixed portrait cap */
+.portrait-cap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  border-radius: 9px 9px 0 0;
+  overflow: hidden;
 }
 
 @media (max-width: 720px) {
@@ -705,14 +706,14 @@ footer span { color: var(--accent); }
   </div>
 </section></main><footer class="wrap">
   <div class="footer-left">
-    <span>© <span id="year"></span> Omor TE. Made with curiosity.</span>
-    <a class="views-badge" href="https://github.com/txrszone" target="_blank" rel="noopener noreferrer" title="Profile views">
+    <div class="views-badge" title="Profile views">
       <span class="dot"></span>
       <img
         src="https://visitor-badge.laobi.icu/badge?page_id=txrszone.homepage&left_text=Views&left_color=%237cc4ff&right_color=%230d1420"
         alt="Profile views"
       >
-    </a>
+    </div>
+    <span>© <span id="year"></span> Omor TE. Made with curiosity.</span>
   </div>
   <div>Designed to keep building <span>✳</span></div>
 </footer><script>
