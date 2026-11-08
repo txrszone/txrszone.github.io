@@ -2,7 +2,7 @@
 
 🎮 Gaming Enthusiast · 💻 Technology Lover · 🛠️ Digital Creator
 
-Welcome to my Portofilo GitHub repository!
+Welcome to my Portfolio GitHub repository!
 
 I'm Omor, someone who enjoys gaming, exploring technology, experimenting with web development, and turning ideas into digital projects.
 
@@ -23,6 +23,8 @@ I'm Omor, someone who enjoys gaming, exploring technology, experimenting with we
 Hey! I'm Omor TE.
 
 I'm interested in gaming, technology, websites, AI tools, and creative digital projects. I enjoy exploring new ideas, learning how things work, and improving my projects over time.
+
+I'm a huge fan of coding, video games, and anything creative that lets me experiment. Gaming is one of my favourite ways to unwind — especially titles like Modern Warships — while coding and building projects give me a chance to solve problems, learn something new, and bring weird, fun ideas to life. I also enjoy exploring AI tools, pixel art, web design, and retro-style visuals, and I'm always curious about how things are made under the hood.
 
 I'm still learning and experimenting, and this GitHub repository is part of my journey.
 
@@ -67,7 +69,25 @@ Take a rickshaw through the streets of Dhaka and cause mayhem in this chaotic, c
 
 🔗 Website: https://baper-rasta.lovable.app/
 
-6. 🌐 My Personal Website
+6. 🛺 Baper Doa
+
+The second chapter of Baper Rasta — now with a second-person view. Ride a rickshaw, cause chaos, and bring the streets of Dhaka to life from an entirely new perspective.
+
+🔗 Website: https://baper-doa.lovable.app/
+
+7. 👋 Thappor Man
+
+Criminals are on the run. Chase them down, catch them, and deliver a proper slap in this fast-paced, action-packed game.
+
+🔗 Website: https://thappor-man.lovable.app/
+
+8. 🛺 Mama Jaben?
+
+A rickshaw bargaining game that every Dhaka local will instantly recognise. Haggle over the fare, argue with the rickshaw puller, and see if you can strike a deal — or get taken for a ride.
+
+🔗 Website: https://mama-jaben.lovable.app/
+
+9. 🌐 My Personal Website
 
 My personal corner of the internet, featuring information about me, my projects, interests, and social links.
 
@@ -110,6 +130,7 @@ I enjoy experimenting with tools and technologies for building digital projects.
 - GitHub
 - GitHub Pages
 - AI-powered development tools
+- Lovable
 
 This list may grow as I learn and explore more technologies.
 
@@ -130,5 +151,7 @@ Thanks for checking out my GitHub repository.
 Keep learning. Keep creating. Keep exploring.
 
 © Omor TE
+
+![Profile Views](https://komarev.com/ghpvc/?username=txrszone&color=blue)
 
 </div>
