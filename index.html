@@ -385,6 +385,11 @@ h2 {
 
 .socials a:hover { background: rgba(0,0,0,.08); }
 
+.socials a:focus-visible {
+  outline: 2px solid #171910;
+  outline-offset: 3px;
+}
+
 footer {
   padding: 26px 0;
   display: flex;
@@ -400,9 +405,9 @@ footer span { color: var(--accent); }
 
 .footer-left {
   display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 /* Profile views badge */
@@ -447,25 +452,14 @@ footer span { color: var(--accent); }
   50% { opacity: .3; }
 }
 
-/* Fixed portrait cap */
-.portrait-cap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 0;
-  border-radius: 9px 9px 0 0;
-  overflow: hidden;
-}
-
 @media (max-width: 720px) {
   .wrap { width: 89%; }
 
   nav { min-height: 62px; }
 
   .nav-links {
-    gap: 13px;
-    font-size: 11px;
+    gap: 16px;
+    font-size: 13px;
   }
 
   .hero {
@@ -514,6 +508,16 @@ footer span { color: var(--accent); }
   .contact-box { padding: 28px 22px; }
 
   footer { flex-direction: column; align-items: flex-start; }
+
+  html { scroll-padding-top: 70px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
 }
 </style></head><body><header>
   <nav class="wrap">
@@ -544,6 +548,9 @@ footer span { color: var(--accent); }
       class="portrait"
       src="https://i.postimg.cc/B6zZscsp/1787207050581.jpg"
       alt="Omor TE profile photo"
+      width="255"
+      height="285"
+      decoding="async"
     >
     <div class="portrait-label">LEARN. CREATE. REPEAT. ↗</div>
   </div>
@@ -604,7 +611,7 @@ footer span { color: var(--accent); }
       <h3>MW Legends Official</h3>
       <p class="project-description">A gaming-focused chatbot project designed to make game information and help easier to access.</p>
     </div>
-    <span class="arrow">↗</span>
+    <span class="arrow" aria-hidden="true">↗</span>
   </a>
 
   <a class="project" href="https://trustsend.lovable.app/" target="_blank" rel="noopener noreferrer">
@@ -615,7 +622,7 @@ footer span { color: var(--accent); }
       <h3>TrustSend</h3>
       <p class="project-description">A file-hosting and sharing project focused on making it easier to share files through links.</p>
     </div>
-    <span class="arrow">↗</span>
+    <span class="arrow" aria-hidden="true">↗</span>
   </a>
 
   <a class="project" href="https://pixel-train.lovable.app/" target="_blank" rel="noopener noreferrer">
@@ -626,7 +633,7 @@ footer span { color: var(--accent); }
       <h3>Pixel Train</h3>
       <p class="project-description">A pixel-style train experience with a nostalgic vibe, bringing back the charm of simple, retro-inspired visuals.</p>
     </div>
-    <span class="arrow">↗</span>
+    <span class="arrow" aria-hidden="true">↗</span>
   </a>
 
   <a class="project" href="https://pixel-village.lovable.app/" target="_blank" rel="noopener noreferrer">
@@ -637,7 +644,7 @@ footer span { color: var(--accent); }
       <h3>Pixel Village</h3>
       <p class="project-description">A pixel-art village viewing experience where you can explore charming pixel-style scenery and enjoy the view.</p>
     </div>
-    <span class="arrow">↗</span>
+    <span class="arrow" aria-hidden="true">↗</span>
   </a>
 
   <a class="project" href="https://baper-rasta.lovable.app/" target="_blank" rel="noopener noreferrer">
@@ -648,7 +655,7 @@ footer span { color: var(--accent); }
       <h3>Baper Rasta</h3>
       <p class="project-description">Take a rickshaw through the streets of Dhaka and cause mayhem in this chaotic, city-inspired experience.</p>
     </div>
-    <span class="arrow">↗</span>
+    <span class="arrow" aria-hidden="true">↗</span>
   </a>
 
   <a class="project" href="https://baper-doa.lovable.app/" target="_blank" rel="noopener noreferrer">
@@ -659,7 +666,7 @@ footer span { color: var(--accent); }
       <h3>Baper Doa</h3>
       <p class="project-description">The second chapter of Baper Rasta — now with a second-person view. Ride a rickshaw, cause chaos, and bring the streets of Dhaka to life from an entirely new perspective.</p>
     </div>
-    <span class="arrow">↗</span>
+    <span class="arrow" aria-hidden="true">↗</span>
   </a>
 
   <a class="project" href="https://thappor-man.lovable.app/" target="_blank" rel="noopener noreferrer">
@@ -670,7 +677,7 @@ footer span { color: var(--accent); }
       <h3>Thappor Man</h3>
       <p class="project-description">Criminals are on the run. Chase them down, catch them, and deliver a proper slap in this fast-paced, action-packed game.</p>
     </div>
-    <span class="arrow">↗</span>
+    <span class="arrow" aria-hidden="true">↗</span>
   </a>
 
   <a class="project" href="https://mama-jaben.lovable.app" target="_blank" rel="noopener noreferrer">
@@ -681,7 +688,7 @@ footer span { color: var(--accent); }
       <h3>Mama Jaben?</h3>
       <p class="project-description">A rickshaw bargaining game that every Dhaka local will instantly recognise. Haggle over the fare, argue with the rickshaw puller, and see if you can strike a deal — or get taken for a ride.</p>
     </div>
-    <span class="arrow">↗</span>
+    <span class="arrow" aria-hidden="true">↗</span>
   </a>
 
 </div>
@@ -706,8 +713,8 @@ footer span { color: var(--accent); }
   </div>
 </section></main><footer class="wrap">
   <div class="footer-left">
-    <div class="views-badge" title="Profile views">
-      <span class="dot"></span>
+    <div class="views-badge" title="Profile views" aria-label="Profile visit count">
+      <span class="dot" aria-hidden="true"></span>
       <img
         src="https://visitor-badge.laobi.icu/badge?page_id=txrszone.homepage&left_text=Views&left_color=%237cc4ff&right_color=%230d1420"
         alt="Profile views"
